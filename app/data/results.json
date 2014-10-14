@@ -1,0 +1,28 @@
+[
+	{
+		"id":0,
+		"name":"Ana",
+		"lastname":"Ban",
+		"date":"14.10.2014",
+		"resulttype":"laboratorijski izvid krvi",
+		"resultURL": "images/rez.jpg"
+	},
+	{
+		"id":1,
+		"name":"Tina",
+		"lastname":"Birpis",
+		"date":"14.10.2014",
+		"resulttype":"RTG",
+		"resultURL": "images/rtg.jpg"
+
+	},
+	{
+		"id":2,
+		"name":"Miha",
+		"lastname":"Baloh",
+		"date":"13.10.2014",
+		"resulttype":"RTG",
+		"resultURL": "images/rtg.jpg"
+
+	}
+]
