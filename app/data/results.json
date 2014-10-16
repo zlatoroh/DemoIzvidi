@@ -5,7 +5,8 @@
 		"lastname":"Ban",
 		"date":"14.10.2014",
 		"resulttype":"laboratorijski izvid krvi",
-		"resultURL": "images/rez.jpg"
+		"resultURL": "images/rez.jpg",
+		"unread":true
 	},
 	{
 		"id":1,
@@ -13,7 +14,8 @@
 		"lastname":"Birpis",
 		"date":"14.10.2014",
 		"resulttype":"RTG",
-		"resultURL": "images/rtg.jpg"
+		"resultURL": "images/rtg.jpg",
+		"unread":false
 
 	},
 	{
@@ -22,7 +24,8 @@
 		"lastname":"Baloh",
 		"date":"13.10.2014",
 		"resulttype":"RTG",
-		"resultURL": "images/rtg.jpg"
+		"resultURL": "images/rtg.jpg",
+		"unread":false
 
 	}
 ]

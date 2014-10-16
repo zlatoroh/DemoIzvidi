@@ -1,5 +1,5 @@
 <div class="list-group">
-  <a href="#/results/{{element.id}}" class="list-group-item" ng-repeat="element in alldata">
+  <a href="#/results/{{element.id}}" class="list-group-item" ng-repeat="element in alldata | orderBy:'unread':reverse=true" ng-class="{'list-group-item-warning' :element.unread}">
     <h4 class="list-group-item-heading">{{element.name}} {{element.lastname}}</h4>
     <p class="list-group-item-text">{{element.date}} - {{element.resulttype}}</p>
   </a>

@@ -10,11 +10,12 @@ $main-gray: #cfd8dc;
 /* Space out content a bit */
 body {
   background-color: $main-gray;
+  padding-top: 70px; // dodal zaradi fixnega manija
 }
-
-
-
-
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
 
 .form-signin{
   max-width: 350px;
@@ -45,7 +46,20 @@ body {
   padding-bottom: 10px;
 }
 
+#custom-header{
+
+  .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2{
+    padding: 0px;
+  }
+
+  .navbar-title{
+    line-height: 50px;
+    font-size: 18px;
+  }
 
 
+  .row{
+    margin: 0;
+  }
 
-
+}

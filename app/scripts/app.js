@@ -42,9 +42,19 @@ var app = angular
 
 app.factory('Page', function(){
   var title = '';
+  var newTests = 0;
+  var mainData = {};
+
   return {
     title: function() { return title; },
-    setTitle: function(newTitle) { title = newTitle; }
+    setTitle: function(newTitle) { title = newTitle; },
+
+    newTests: function() { return newTests;},
+    setNewTests: function(newt) {newTests = newt;},
+
+    getData: function() {return mainData;},
+    setData: function(mData) {mainData = mData;}
+
   };
 });
 
