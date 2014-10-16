@@ -8,6 +8,10 @@
  *
  * Main module of the application.
  */
+
+ //http://www.ng-newsletter.com/posts/angular-on-mobile.html
+ //http://www.sitepoint.com/tidy-angular-controllers-factories-services/
+ //http://designshack.net/articles/css/joshuajohnson-2/
 var app = angular
   .module('izvidiApp', [
     'ngAnimate',
@@ -15,7 +19,8 @@ var app = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-gestures'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -57,15 +62,6 @@ app.factory('Page', function(){
 
   };
 });
-
-/*app.factory('fullData', function(){
-  var dataobj = '';
-  return {
-    dataobj: function() { return dataobj; },
-    setData: function(newData) { dataobj = newData; }
-  };
-});*/
-
 
 
 app.directive('izvidiHeader', function(){

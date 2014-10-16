@@ -27,5 +27,14 @@
 		"resultURL": "images/rtg.jpg",
 		"unread":false
 
+	},
+		{
+		"id":3,
+		"name":"Giralda",
+		"lastname":"Ksiht",
+		"date":"14.10.2014",
+		"resulttype":"laboratorijski izvid krvi",
+		"resultURL": "images/rez.jpg",
+		"unread":true
 	}
 ]

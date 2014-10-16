@@ -22,14 +22,17 @@
 angular.module('izvidiApp')
   .controller('AboutCtrl',['$scope','Page','$http', function ($scope, Page, $http) {
   	Page.setTitle('ZADNJI IZVIDI');
-    
-  	//var podatki = this;
+
+  /*  var testData = new TestResultsData();
+    Page.setNewTests(countNewTests(testData));
+    Page.setData(testData);
+*/
+
   	$http.get('data/results.json').success(function(data){
 	        $scope.alldata = data;
           Page.setNewTests(countNewTests(data));
           Page.setData(data);
-	     //   podatki.dataall = data;
-	});
+	 });
   	//fullData.setData(podatki.dataall);  
   }]);
 /*
