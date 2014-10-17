@@ -8,10 +8,6 @@
  * Controller of the izvidiApp
  */
 angular.module('izvidiApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl',['$scope', function ($scope) {
+
+  }]);
