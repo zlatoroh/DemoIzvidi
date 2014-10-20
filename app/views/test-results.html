@@ -2,9 +2,9 @@
 	  <div class="panel-heading">
 			<h3 class="panel-title">Izvid {{alldata[id].resulttype}} za pacienta {{alldata[id].name}} {{alldata[id].lastname}}</h3>
 	  </div>
-	  <div class="panel-body" hm-pinch="tapped($event)">
-
-	  <img ng-src="{{alldata[id].resultURL}}" class="img-responsive" alt="nalagam izvid...">
-
+	  <div class="panel-body" >
+	  <div class="test-overflow">
+	  <img  hm-pinch="tapped($event)" ng-src="{{alldata[id].resultURL}}" class="img-responsive center-block test-img" alt="nalagam izvid...">
+		</div>
 	  </div>
 </div>

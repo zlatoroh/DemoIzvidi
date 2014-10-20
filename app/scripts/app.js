@@ -12,6 +12,10 @@
  //http://www.ng-newsletter.com/posts/angular-on-mobile.html
  //http://www.sitepoint.com/tidy-angular-controllers-factories-services/
  //http://designshack.net/articles/css/joshuajohnson-2/
+
+ /*
+git push origin master
+ */
 var app = angular
   .module('izvidiApp', [
     'ngAnimate',

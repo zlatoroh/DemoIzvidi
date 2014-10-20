@@ -11,52 +11,47 @@
  function countNewTests(jsonObj) {
   var count = 0;
   for (var i=0; i<jsonObj.length; i++) {
-    if (jsonObj[i].unread === true) {
+    if (jsonObj[i].unread === true && jsonObj[i].visible === true) {
       count ++;
     }
   }
   return count;
 }
 
+ function showNewElements(jsonObj) {
+  for (var i=0; i<jsonObj.length; i++) {
+    if (jsonObj[i].visible === false) {
+        jsonObj[i].visible = true;
+    }
+  }
+  return jsonObj;
+}
 
 angular.module('izvidiApp')
-  .controller('AboutCtrl',['$scope','Page','$http', function ($scope, Page, $http) {
-  	Page.setTitle('ZADNJI IZVIDI');
-
-  /*  var testData = new TestResultsData();
-    Page.setNewTests(countNewTests(testData));
-    Page.setData(testData);
+  .controller('AboutCtrl',['$scope','Page','$http','$interval', function ($scope, Page, $http, $interval) {
+    Page.setTitle('ZADNJI IZVIDI');
+    $scope.alldata = Page.getData();
+    Page.setNewTests(countNewTests($scope.alldata));
+ /*   $scope.shownew = function(){
+      var test  = showNewElements($scope.alldata);
+      Page.setData(test);
+      Page.setNewTests(countNewTests(test));
+    };
 */
+  var intervalko = $interval(function() {
+    //$scope.getData = $http.get('scripts/podatki.json').success(function(data){
+        var test  = showNewElements($scope.alldata);
+      Page.setData(test);
+      Page.setNewTests(countNewTests(test));
+      console.log('dd');
+      $interval.cancel(intervalko);
+  }, 5000);
 
-  	$http.get('data/results.json').success(function(data){
-	        $scope.alldata = data;
+  
+ /*   $http.get('data/results.json').success(function(data){
+          $scope.alldata = data;
           Page.setNewTests(countNewTests(data));
           Page.setData(data);
-	 });
-  	//fullData.setData(podatki.dataall);  
-  }]);
-/*
-angular.module('izvidiApp').filter('prderResults', function(){
-  return function(input){
-
-  };
-
-});
-*/
-/*
-
-klic uporabis takole ce ne uporabis scopa + 
-ng-controller="AboutCtrl as about" v templatu
-
-angular.module('izvidiApp')
-  .controller('AboutCtrl',['$scope','Page','$http', function ($scope, Page, $http) {
-  	Page.setTitle('ZADNJI IZVIDI');
-  	var tale = this;
-  	$http.get('data/results.json').success(function(data){
-	        tale.alldata = data;       
-	});
+   });*/
 
   }]);
-
-
-*/

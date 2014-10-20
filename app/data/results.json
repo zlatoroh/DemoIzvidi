@@ -6,7 +6,8 @@
 		"date":"14.10.2014",
 		"resulttype":"laboratorijski izvid krvi",
 		"resultURL": "images/rez.jpg",
-		"unread":true
+		"unread":false,
+		"visible":true
 	},
 	{
 		"id":1,
@@ -15,7 +16,8 @@
 		"date":"14.10.2014",
 		"resulttype":"RTG",
 		"resultURL": "images/rtg.jpg",
-		"unread":false
+		"unread":false,
+		"visible":true
 
 	},
 	{
@@ -25,25 +27,28 @@
 		"date":"13.10.2014",
 		"resulttype":"RTG",
 		"resultURL": "images/rtg.jpg",
-		"unread":false
+		"unread":false,
+		"visible":true
 
 	},
-		{
+	{
 		"id":3,
-		"name":"Giralda",
-		"lastname":"Ksiht",
+		"name":"Anita",
+		"lastname":"Kovač",
 		"date":"14.10.2014",
 		"resulttype":"laboratorijski izvid krvi",
-		"resultURL": "images/rez.jpg",
-		"unread":true
+		"resultURL": "images/lab.jpg",
+		"unread":true,
+		"visible":false
 	},
-			{
+	{
 		"id":4,
 		"name":"Miha",
-		"lastname":"Begrad",
+		"lastname":"Bešter",
 		"date":"15.10.2014",
 		"resulttype":"laboratorijski izvid krvi",
 		"resultURL": "images/lab.jpg",
-		"unread":true
+		"unread":true,
+		"visible":true
 	}
 ]
