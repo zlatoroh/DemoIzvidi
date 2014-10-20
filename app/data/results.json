@@ -36,5 +36,14 @@
 		"resulttype":"laboratorijski izvid krvi",
 		"resultURL": "images/rez.jpg",
 		"unread":true
+	},
+			{
+		"id":4,
+		"name":"Miha",
+		"lastname":"Begrad",
+		"date":"15.10.2014",
+		"resulttype":"laboratorijski izvid krvi",
+		"resultURL": "images/lab.jpg",
+		"unread":true
 	}
 ]
